@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Workshop Registration</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+    <h2>Workshop Registration Form</h2>
+
+    <form action="https://formsubmit.co/syedazainab1207@gmail.com" method="POST">
+
+        <!-- Disable Captcha -->
+        <input type="hidden" name="_captcha" value="false">
+
+        <!-- Redirect after submit -->
+        <input type="hidden" name="_next" value="thankyou.html">
+
+        <label>Full Name:</label>
+        <input type="text" name="Full Name" required>
+
+        <label>Email:</label>
+        <input type="email" name="Email" required>
+
+        <label>Register Number:</label>
+        <input type="tel" name="Register Numbe" required>
+
+        <label>Select Workshop:</label>
+        <select name="Workshop" required>
+            <option value="">-- Choose Workshop --</option>
+            <option>Web Designing</option>
+            <option>Graphic Designing</option>
+            <option>App Development</option>
+            <option>Digital Marketing</option>
+            <option>Artificial Intelligence & Machine Learning</option>
+        </select>
+
+        <label>Class:</label>
+        <input type="text" name="Class" required>
+
+        <label>Additional Message:</label>
+        <textarea name="Message" rows="4"></textarea>
+
+        <button type="submit">Register Now</button>
+    </form>
+</div>
+
+<!-- Link JS -->
+<script src="script.js"></script>
+</body>
+</html>
